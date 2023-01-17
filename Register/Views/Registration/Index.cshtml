@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Register.Models.Registration>
+
+@{
+    ViewData["Title"] = "Index";
+
+    Pager pager = new Pager();
+
+    int pageNo = 0;
+
+    if(ViewBag.Pager !=null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+<h1>Registration</h1>
+
+<partial name="_Pager" model="@pager" />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ComanyName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.State)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th>
+                <a asp-action="AddOrEdit" class="btn btn-sm btn-success"><i class="fa-solid fa-plus"></i>New</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ComanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.State)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Country)
+                </td>
+            <td>
+                <div class="btn-group btn-group-sm">
+                        <a asp-action="AddOrEdit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                        <form asp-action="Delete" asp-route-id="@item.Id">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure do you want delete?')">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+                        </form>
+                </div>                                 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
