@@ -19,6 +19,13 @@ namespace Register.Controllers
             _context = context;
         }
 
+
+        // Default
+        public ActionResult Default()
+        {           
+            return View();
+        }
+
         // GET: Registration
         public async Task<IActionResult> Index(int pg=1)
         {
