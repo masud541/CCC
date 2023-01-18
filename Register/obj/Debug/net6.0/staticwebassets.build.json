@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tcB8TxvWYz7NEqAPdK4G5K8kZQTlyHH1g8Pg7gdchGI=",
+  "Hash": "/9cH7G+oTGgfmiLmj4wvmP53gnzW5PSVcbyBrpIF++g=",
   "Source": "Register",
   "BasePath": "_content/Register",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\RC Project\\Register\\Register\\wwwroot\\images\\Header_Logo.jpg",
+      "SourceId": "Register",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\RC Project\\Register\\Register\\wwwroot\\",
+      "BasePath": "_content/Register",
+      "RelativePath": "images/Header_Logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Header_Logo.jpg"
+    },
+    {
+      "Identity": "E:\\RC Project\\Register\\Register\\wwwroot\\images\\W7_AE_FLT_registration.jpg",
+      "SourceId": "Register",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\RC Project\\Register\\Register\\wwwroot\\",
+      "BasePath": "_content/Register",
+      "RelativePath": "images/W7_AE_FLT_registration.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\W7_AE_FLT_registration.jpg"
     },
     {
       "Identity": "E:\\RC Project\\Register\\Register\\wwwroot\\js\\site.js",

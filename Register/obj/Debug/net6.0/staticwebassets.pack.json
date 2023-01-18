@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\RC Project\\Register\\Register\\wwwroot\\images\\Header_Logo.jpg",
+      "PackagePath": "staticwebassets\\images\\Header_Logo.jpg"
+    },
+    {
+      "Id": "E:\\RC Project\\Register\\Register\\wwwroot\\images\\W7_AE_FLT_registration.jpg",
+      "PackagePath": "staticwebassets\\images\\W7_AE_FLT_registration.jpg"
+    },
+    {
       "Id": "E:\\RC Project\\Register\\Register\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

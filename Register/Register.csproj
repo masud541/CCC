@@ -19,4 +19,8 @@
     <Folder Include="Data\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\images\W7_AE_FLT_registration.jpg" />
+  </ItemGroup>
+
 </Project>
