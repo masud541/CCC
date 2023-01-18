@@ -9,15 +9,26 @@
     <link rel="stylesheet" href="~/Register.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>   
-    <div class="container mt-5">
-        <main role="main" class="pb-3">
-            <div class="col-md-8 offset-md-2">
-                @RenderBody()
-            </div>
+<body>
+    <div class="row">
+    <div class="col-md-7" style="margin:0px auto">
+        <div style="margin: 5px;text-align: right;">
+            <img width="200" height="25" src="~/images/header_logo.jpg" />
+        </div>
 
-        </main>
-    </div>  
+        <div style="width:100%;background:#D1D2D4; border-radius:10px; min-height:500px; padding:1px">
+            <h4 style="padding:20px">JL Audio Registration</h4>
+                @RenderBody()
+        </div>
+    </div>
+    </div>
+    <footer class="border-top footer text-muted  mt-3">
+        <div class="container" style="text-align:center">
+            <p style="text-align:center; font-size:10px">If you require assistance with the registration process, please contact JL Audio Customer Service: JL Audio, Inc, 10369 North Commerce Pkwy., Miramar, FL 33025, Phone: 1-888-JLAUDIO 1-888-552-8346 Fax: 954-443-1111</p>
+
+            <p style="text-align:center; font-size:10px">Copyright © 2017, JL Audio, Inc. - All Rights Reserved. Copyright & Trademark Notice I Privacy Policy</p>
+        </div>
+    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
