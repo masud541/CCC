@@ -72,7 +72,7 @@ namespace Register.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddOrEdit([Bind("Id,Name,ComanyName,City,State","PhoneNo","Email", "CompanyAddress", "Country")] Registration registration)
+        public async Task<IActionResult> AddOrEdit([Bind("Id,Name,ComanyName,City,State","PhoneNo","Email", "CompanyAddress", "Country", "Zipcode")] Registration registration)
         {
             if (ModelState.IsValid)
             {
