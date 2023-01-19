@@ -26,6 +26,16 @@ namespace Register.Controllers
             return View();
         }
 
+        public ActionResult RegistrationSerialCheckResult()
+        {
+            return View();
+        }
+
+        public ActionResult RegistrationAssistance()
+        {
+            return View();
+        }
+
         // GET: Registration
         public async Task<IActionResult> Index(int pg=1)
         {

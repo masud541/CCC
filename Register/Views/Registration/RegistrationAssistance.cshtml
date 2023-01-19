@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Registration";
+    Layout = "~/Views/Shared/_landing.cshtml";
+}
+
+
+<div style="float:right; width:50%; text-align:right">
+    <img src="~/images/step1.jpg" style="width: 200px; height: 50px; margin-top:15px" />
+</div>
+<div class="row" style="clear:both">
+    <div class="col-md-10 mt-5" style="margin:0px auto">
+        <p>
+            To register your JL Audio product, you will need the product's serial number and your sales receipt from an authorized JL Audio retailer (for purchase date and retailer information).
+        </p>
+        <br />
+        <p>
+            The serial number can be located on the product itself or on its packaging. If you are registering multiple units, register the first one and you will have the option at the end to register the additional units.
+        </p>
+      
+    </div>
+    <div class="col-md-10 mt-2" style="margin:0px auto">
+       <div style="width:100%">
+            <img src="~/images/sn_label_woofer.jpg" /><img src="~/images/sn_label_woofer_detail.jpg" />
+       </div>
+    </div>
+    <div class="col-md-10 mt-2" style="margin:0px auto">
+        <div style="width:100%">
+            <img src="~/images/sn_label_box.jpg" /><img src="~/images/sn_label_detail.jpg" />
+        </div>
+    </div>
+        <div class="col-md-10 mt-5" style="margin:0px auto; min-height:200px">
+        <p>
+            If your serial number is missing (due to being removed from the product), you will not be able to register the product using this website. Please contact JL Audio customer service for assistance at 1-888-JLAUDIO
+        </p>
+        <br />
+        <div style="width:50%; margin:0px auto; text-align:center">
+            <a class="btn btn-secondary" style="background: #fff;color: #000; height: 28px;line-height:10px;" asp-action="RegistrationSerialCheckResult">
+                Continue to Registration
+            </a>           
+        </div>
+    </div>
+</div>
